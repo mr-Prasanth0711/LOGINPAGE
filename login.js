@@ -1,19 +1,18 @@
-function validate(){
- var names=document.getElementById("name").value;
+function vfun(){
+ var names=document.getElementById("uname").value;
  var passw=document.getElementById("pass").value;
- if(names=='prasanth' && passw=="24235"){
-
  
-    alert("Correct");
+if(names==null || names==""){
+    document.getElementById("errorBox").innerHTML="Enter the Username";
+    return false;
 
-}else if(names==-''&& passw==''){
+}if(passw==null || passw==""){
+    document.getElementById("errorBox").innerHTML="Enter the Password";
+    return false;
 
-    alert("please enter the Username ans Password");
- 
-    
-}else{
-    alert("Incorrect");
- 
+
+}if(names!='' && passw!=''){
+    alert("login Succesfully");
 
 }
 }

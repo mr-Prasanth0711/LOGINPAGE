@@ -12,13 +12,12 @@ body{
     column-gap: 30px;
 }
 .card{
-    padding: 60px 40px 50px 40px;
+    padding: 60px 60px 60px 60px;
     background: rgba(212, 159, 146, 0.753);
     border-radius: 15px;
 }
 #name{
     width: 200px;
-    margin-top: 10px;
     border: none;
     background: transparent;
     border-bottom: 1px solid white;
@@ -29,7 +28,6 @@ body{
 }
 #pass{
     width: 200px;
-    margin-top: 10px;
     border: none;
     background: transparent;
     border-bottom: 1px solid white;
@@ -38,53 +36,42 @@ body{
     color: white;
 
 }
-#button{
+input[type="submit"]{
     border-radius: 20px;
-    padding: 10px 10px;
+    padding: 10px 20px;
     background: dodgerblue;
-    margin-top: 20px;
     border: none;
     outline: none;
     color: white;
     text-align: center;
+}
+input[type="submit"]:hover{
+
+
+cursor: pointer;
+background: #22413e;
+
 }
 a{
 
     font-size: 15px;
     text-align: left;
 }
+a:hover{
+    cursor: pointer;
+    color: rgb(139, 43, 43);
+}
 img{
     border-radius: 50%;
     position: absolute;
-    margin-left: 110px;
+    margin-left: 130px;
     margin-top: -40px;
 }
 header{
     text-align: center;
-}.topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border-bottom: 3px solid transparent;
-  }
-  
-  .topnav a:hover {
-    border-bottom: 3px solid red;
-  }
-  
-  .topnav a.active {
-    border-bottom: 3px solid red;
-  }
-  .topnav-right {
-    float: right;
-  }
+}
+
+p{
+    color: rgb(20, 4, 1);
+    font-weight: bold;
+}

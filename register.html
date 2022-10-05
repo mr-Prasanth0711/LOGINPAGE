@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
@@ -12,17 +12,23 @@
         <img src="user_icon_001.jpg" height="70" width="70">
         <div class="card">
             <header><b>Register</b></header>
-            
+
+            <form name="myform1" onsubmit="Register(event)" >
+            <p>Username</p>
             <input type="text" placeholder="Username" id="name"><br>
+            <p>Password</p>
             <input type="password" placeholder="Password" id="pass"><br>
-            <input type="password" placeholder="Confirm Password" id="pass"><br>
+            <p>Confirm Password</p>
+            <input type="password" placeholder="Confirm Password" id="cpass"><br>
            
-            <input type="submit "value="Register" id="button"><br>
+            <button type="button"value="Register" name="" onclick="validate()">submit</button><br>
+            <a href="login.html">Existing User?Login</a>
             
-            
-    
+            <div id="errorBox"></div>
         </div>
     
-    
+    </form>
+
+   <script src="register.js"></script>
 </body>
 </html>
